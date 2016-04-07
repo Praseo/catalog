@@ -1,0 +1,5 @@
+:2015
+rewrite / {
+    ext /
+    to /index.html
+}

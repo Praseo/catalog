@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html id="ng-app" ng-app="catalog">
+  <head>
+    <base href="/" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Service Catalog">
+    <meta name="author" content="Praseo, Inc.">
+
+    <meta name="google" content="notranslate" />
+
+
+    <title ng-bind="config.title"></title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+  </head>
+  <body style="height: auto">
+    <!--[if lt IE 9]>
+      <div class="alert alert-warning alert-old-browser">
+      You are using an <strong>outdated</strong> browser.
+      Please <a class="alert-link" href="http://browsehappy.com/">upgrade your browser</a>.
+      </div>
+      <![endif]-->
+
+      <noscript>
+        <div class="home-header" style="top: -60px;">
+          <div class="container">
+            <div class="col-lg-8 col-md-8">
+              <div style="margin-top: 80px;">
+                <h2>To use Service Catalog, it is necessary to enable JavaScript.</h2>
+                <h4>
+                  Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+                    instructions how to enable JavaScript in your web browser
+                  </a>.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </noscript>
+
+      <!-- <h1>YEAH</h1> -->
+      <div ui-view></div>
+
+      <!-- Angular Modules -->
+      <script src="node_modules/angular/angular.js"></script>
+      <script src="node_modules/angular-animate/angular-animate.js"></script>
+      <script src="node_modules/angular-aria/angular-aria.js"></script>
+      <script src="node_modules/angular-material/angular-material.js"></script>
+      <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+      <!-- 3rd party  -->
+      <script src="node_modules/lodash/lodash.js"></script>
+
+      <!-- App -->
+      <script src="app/module.js"></script>
+      <script src="app/config.js"></script>
+      <script src="app/services/module.js"></script>
+      <script src="app/services/router.js"></script>
+      <script src="app/services/repo.js"></script>
+      <script src="app/services/servicesCtrl.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-sm-4" ng-repeat="service in catalog.services">
+
+    <md-card>
+      <md-card-title>
+        <!-- <md-card-title-text> -->
+          <!-- <span class="md-headline" ng-bind="service.display_name">Card with image</span> --> <!-- <span class="md-subhead">Small</span> --> <!-- </md-card-title-text> --> <md-card-title-media>
+          <img ng-src="{{service.img_url}}" class="md-card-image" ng-style="service.img_style" alt="">
+        </md-card-title-media>
+      </md-card-title>
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+      </md-card-actions>
+    </md-card>
+  </div>
+</div>

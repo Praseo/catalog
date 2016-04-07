@@ -1,0 +1,6 @@
+# Vendors
+node_modules
+
+# Project Specific
+img
+catalog.json
