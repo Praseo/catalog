@@ -12,8 +12,8 @@
     }],
     "services": [
         {
-            "level_id": "stable",
             "slug": "gerrit",
+            "level_id": "stable",
             "display_name": "Gerrit",
             "img_url": "img/gerrit.png",
             "img_style": {
@@ -21,8 +21,8 @@
             }
         },
         {
-            "level_id": "stable",
             "slug": "artifactory",
+            "level_id": "stable",
             "display_name": "Artifactory",
             "img_url": "img/artifactory.png",
             "img_style": {
@@ -30,8 +30,8 @@
             }
         },
         {
-            "level_id": "stable",
             "slug": "jenkins",
+            "level_id": "stable",
             "display_name": "Jenkins",
             "img_url": "img/jenkins.png",
             "img_style": {
@@ -39,8 +39,8 @@
             }
         },
         {
-            "level_id": "stable",
             "slug": "openalm",
+            "level_id": "stable",
             "display_name": "OpenALM",
             "img_url": "img/openalm.png",
             "img_style": {
@@ -48,8 +48,8 @@
             }
         },
         {
-            "level_id": "stable",
             "slug": "sonarqube",
+            "level_id": "stable",
             "display_name": "SonarQube",
             "img_url": "img/sonarqube.png",
             "img_style": {
@@ -57,8 +57,8 @@
             }
         },
         {
-            "level_id": "stable",
             "slug": "jira",
+            "level_id": "stable",
             "display_name": "Jira",
             "img_url": "img/jira.png",
             "img_style": {
@@ -66,8 +66,8 @@
             }
         },
         {
-            "level_id": "incubator",
             "slug": "blackduck",
+            "level_id": "incubator",
             "display_name": "Black Duck",
             "img_url": "img/blackduck.png"
         }

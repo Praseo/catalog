@@ -5,11 +5,20 @@
    .module('catalog.services')
    .factory('servicesRepo', ['$http', function ($http) {
 
+      var baseUrl = 'data/';
       var repo = {};
 
       repo.getCatalog = function () {
          return $http
-                  .get('catalog.json', {cache: true})
+                  .get(baseUrl + 'catalog.json', {cache: true})
+                  .then(function (response) {
+                     return response.data;
+                  });
+      };
+
+      repo.getService = function (slug) {
+         return $http
+                  .get(baseUrl + '/services/' + slug + '.json', {cache: true})
                   .then(function (response) {
                      return response.data;
                   });

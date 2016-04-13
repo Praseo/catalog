@@ -27,8 +27,8 @@
       .state('services.details', {
          url: '/:slug',
          resolve: {
-            catalogService: ['$stateParams', 'catalog', function ($stateParams, catalog) {
-               return _.find(catalog.services, {slug: $stateParams.slug});
+            catalogService: ['$stateParams', 'servicesRepo', function ($stateParams, repo) {
+               return repo.getService($stateParams.slug);
             }]
          },
          views: {

@@ -1,0 +1,50 @@
+{
+    "level_id": "stable",
+    "slug": "gerrit",
+    "display_name": "Gerrit",
+    "img_url": "img/gerrit.png",
+    "img_style": {
+        "width": "300px"
+    },
+    "instances" : [
+        {
+            "name": "america-1",
+            "url": "https://america-1.local"
+        },
+        {
+            "name": "europe-1",
+            "url": "https://europe-1.local"
+        },
+        {
+            "name": "staging-1",
+            "url": "https://staging-1.local"
+        }
+    ],
+    "links": [
+        {
+            "label": "User Guide",
+            "type": "official",
+            "url": "http://docs.sonarqube.org/display/SONAR/User+Guide"
+        },
+        {
+            "label": "Admin Guide",
+            "type": "official",
+            "url": "http://docs.sonarqube.org/display/SONAR/Administration+Guide"
+        },
+        {
+            "label": "API Documentation",
+            "type": "official",
+            "url": "https://nemo.sonarqube.org/web_api"
+        },
+        {
+            "label": "Self-Service Portal",
+            "type": "extension",
+            "url": "https://portal.self-service.local"
+        },
+        {
+            "label": "Self-Service API",
+            "type": "swagger",
+            "url": "https://api.self-service.local"
+        }
+    ]
+}
