@@ -4,8 +4,16 @@
    angular
    .module('catalog.services')
    .controller('ServicesCtrl', ['$scope', 'catalog', function ($scope, catalog) {
+        $scope.catalogLevels =
+           _.chain(catalog.levels)
+            .map(function (lvl) {
+               lvl.services = _.filter(catalog.services, {level_id: lvl.id});
 
-        $scope.catalog = catalog;
+               return lvl;
+            })
+            .value();
+
+      $scope.catalog = catalog;
    }]);
 
 }());

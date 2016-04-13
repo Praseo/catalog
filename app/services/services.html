@@ -1,22 +1,26 @@
-<div class="row">
-  <div class="col-sm-3" ng-repeat="service in catalog.services">
+<div ng-repeat="lvl in catalogLevels">
+  <h2 ng-bind="lvl.display_name"></h3>
 
-    <md-card>
-      <md-card-title class="center-block" style="height: 120px">
-        <!-- <md-card-title-text> -->
-        <!-- <span class="md-headline" ng-bind="service.display_name">Card with image</span> --> <!-- <span class="md-subhead">Small</span> --> <!-- </md-card-title-text> --> <md-card-title-media>
-          <img ng-src="{{service.img_url}}" class="md-card-image" ng-style="service.img_style" alt="">
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button>
-            <i class="fa fa-rocket"></i>
-            Launch
-          </md-button>
-          <md-button ui-sref="services.details({slug: service.slug })">
-            <i class="fa fa-plus"></i>
-            Show More
-          </md-button>
-        </md-card-actions>
-      </md-card>
+  <div class="row">
+    <div class="col-sm-3" ng-repeat="service in lvl.services">
+
+      <md-card>
+        <md-card-title class="center-block" style="height: 120px">
+          <!-- <md-card-title-text> -->
+          <!-- <span class="md-headline" ng-bind="service.display_name">Card with image</span> --> <!-- <span class="md-subhead">Small</span> --> <!-- </md-card-title-text> --> <md-card-title-media>
+            <img ng-src="{{service.img_url}}" class="md-card-image" ng-style="service.img_style" alt="">
+          </md-card-title>
+          <md-card-actions layout="row" layout-align="end center">
+            <md-button>
+              <i class="fa fa-rocket"></i>
+              Launch
+            </md-button>
+            <md-button ui-sref="services.details({slug: service.slug })">
+              <i class="fa fa-plus"></i>
+              Show More
+            </md-button>
+          </md-card-actions>
+        </md-card>
+    </div>
   </div>
 </div>
