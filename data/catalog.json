@@ -1,6 +1,7 @@
 {
     "title": "GCC Service Catalog",
     "tagline": "...",
+    "logo_url": "img/praseo.png",
     "levels": [{
         "id": "stable",
         "display_name": "Stable",
@@ -16,60 +17,67 @@
             "level_id": "stable",
             "display_name": "Gerrit",
             "img_url": "img/gerrit.png",
-            "img_style": {
-                "width": "300px"
-            }
-        },
-        {
+            "instances" : [
+                {
+                    "display_name": "america-1",
+                    "url": "https://america-1.local"
+                },
+                {
+                    "display_name": "europe-1",
+                    "url": "https://europe-1.local"
+                },
+                {
+                    "display_name": "staging-1",
+                    "url": "https://staging-1.local"
+                }
+            ]
+        }, {
             "slug": "artifactory",
             "level_id": "stable",
             "display_name": "Artifactory",
             "img_url": "img/artifactory.png",
-            "img_style": {
-                "width": "300px"
-            }
-        },
-        {
+            "instances" : [
+            ]
+        }, {
             "slug": "jenkins",
             "level_id": "stable",
             "display_name": "Jenkins",
             "img_url": "img/jenkins.png",
-            "img_style": {
-                "width": "300px"
-            }
-        },
-        {
+            "instances" : [
+            ]
+
+        }, {
             "slug": "openalm",
             "level_id": "stable",
             "display_name": "OpenALM",
             "img_url": "img/openalm.png",
-            "img_style": {
-                "width": "260px"
-            }
-        },
-        {
+            "instances" : [
+            ]
+
+        }, {
             "slug": "sonarqube",
             "level_id": "stable",
             "display_name": "SonarQube",
             "img_url": "img/sonarqube.png",
-            "img_style": {
-                "width": "300px"
-            }
-        },
-        {
+            "instances" : [
+            ]
+
+        }, {
             "slug": "jira",
             "level_id": "stable",
             "display_name": "Jira",
             "img_url": "img/jira.png",
-            "img_style": {
-                "width": "180px"
-            }
-        },
-        {
+            "instances" : [
+            ]
+
+        }, {
             "slug": "blackduck",
             "level_id": "incubator",
             "display_name": "Black Duck",
-            "img_url": "img/blackduck.png"
+            "img_url": "img/blackduck.png",
+            "instances" : [
+            ]
+
         }
     ]
 }

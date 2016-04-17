@@ -9,9 +9,7 @@
     'ui.router',
 
     'catalog.services',
-
+    'catalog.shared',
   ]);
 
-  angular.module('spligo.services', []);
-  angular.module('spligo.templates', []);
 })();

@@ -10,3 +10,24 @@ body {
               0px 0px 2px 2px rgba(0, 0, 0, 0.098),
               0px 0px 5px 1px rgba(0, 0, 0, 0.084);
 }
+
+.header-img {
+  margin-top: 25px;
+}
+
+.margin-sm-top {
+  margin-top: 5px;
+}
+
+.margin-md-top {
+  margin-top: 10px;
+}
+
+.margin-lg-top {
+  margin-top: 15px;
+}
+
+.margin-xl-top {
+  margin-top: 20px;
+}
+

@@ -3,9 +3,6 @@
     "slug": "gerrit",
     "display_name": "Gerrit",
     "img_url": "img/gerrit.png",
-    "img_style": {
-        "width": "300px"
-    },
     "instances" : [
         {
             "name": "america-1",

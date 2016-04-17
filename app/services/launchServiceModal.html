@@ -1,0 +1,44 @@
+<md-dialog aria-label="Mango (Fruit)">
+  <form>
+    <md-toolbar class="header">
+      <div class="md-toolbar-tools">
+        <!-- <h2 ng-bind="service.display_name"> -->
+        <!-- </h2> -->
+        <div class="row">
+          <div class="col-sm-4">
+              <img ng-src="{{service.img_url}}" class="md-card-image header-img" style="max-width: 100%; max-height: 100%" alt="">
+          </div>
+
+          <div class="col-sm-8">
+          </div>
+
+        </div>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <i class="fa fa-times" aria-label="Close Dialog"></i>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <h3>Available Service Instances</h3>
+        <h4 ng-repeat="instance in service.instances">
+          <span ng-bind="instance.display_name"></span>
+          <a ng-href="{{instance.url}}" ng-bind="instance.url" target="_blank"></a>
+        </h4>
+
+      </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <md-button ng-click="showMore()" md-autofocus>
+        <span>More on</span>
+        <span ng-bind="service.display_name"></span>
+      </md-button>
+      <span flex></span>
+      <md-button ng-click="hide()">
+        Cancel
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
